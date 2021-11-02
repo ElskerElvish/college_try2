@@ -1,0 +1,52 @@
+myClass is kind of a group but is pre existant. When clicked on it, it will open a group which is the group of all the students in your
+class along with the teachers that are associated with the teaching of various subjects in the class. 
+
+If a user clicks on the display pic of the class group, the list of partifcipants will be shown but first there will be some options 
+as in instagram. There will be a *exit class(or any other better name)* option that when clicked will lead the user to an explore kind of
+page where he/she can find any student in the college. User can either navigate thru different buildings/departments and then to different
+classes or search up a perticular class or user etc. If user is in a perticular department, he/she won't be able to search up for someone
+who is in other department/building/branch, the search results shown will be for only that perticular department/branch/building he/she is
+in.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The basic look of myClass will be 
+like as follows:
+
+                                                       big round display photo of
+                                                                 class
+                         list of participants starting with the names of teachers so that 2 names of teachers is clearly visible
+ 
+
+
+
+
+                                        
+
+
+                                                 space for the display of messages
+
+
+
+
+
+
+
+
+
+
+
+                      
+                                  box to click on and start writing the messages and a send button
+

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>college</title>
+    <style>
+        body{
+            background-color: rgb(231, 211, 119);
+        }
+        a{
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+        #navid{
+            background-color:  #ff9800;
+            float: top;
+            font-size: 20px;
+            margin: 13px 20px;
+            margin-top: -5px;
+            overflow: hidden;
+            white-space: nowrap;
+            position: fixed;
+            border-radius: 8px;
+            width: 1480px
+        }
+        .navbtnsclass{
+           
+            list-style: none;
+            overflow: auto;
+            margin: 1px;
+            display: flex;
+            flex-basis: auto;
+            flex-direction: row;
+            margin-left: 18px;
+            
+        }
+        #navbtnsidblogs{
+           
+           list-style: none;
+           overflow: auto;
+           margin: 1px;
+           display: flex;
+           flex-basis: auto;
+           flex-direction: row;
+           margin-left: 18px;
+           margin-right: 806px;
+           
+       }
+        #collegelogo{
+            font-size: 47.5px;
+            list-style: none;
+            margin-left: -18px;
+        }
+        #navsearchid{
+            float: right;
+            margin-top: 19px;
+            margin-right: 15px;
+            border-radius: 6px;
+        }
+        #navid p{
+            display: table-row-group;
+        }
+        #navid li{
+            display: inline-block;
+        }
+        #rightsidestuckbtnid1{
+        width: 175px;
+        height: 40px;
+        background: #ff9800 !important;
+        top: 28%;
+        position: fixed;
+        right: 0;
+        z-index: 1000;
+        margin-right: -70px;
+        border-top-left-radius: 11px;
+        border-top-right-radius: 11px;
+        text-align: center;
+        -webkit-transform: rotate(270deg);
+        /* -moz-transform: rotate(270deg); */
+        color: black !important;
+        font-size: 20px;
+        line-height: 40px;
+        text-decoration: none;
+        font-weight: 700;
+        }
+        #rightsidestuckbtnid2{
+        width: 175px;
+        height: 40px;
+        background: #ff9800 !important;
+        top: 66%;
+        position: fixed;
+        right: 0;
+        z-index: 1000;
+        margin-right: -70px;
+        border-top-left-radius: 11px;
+        border-top-right-radius: 11px;
+        text-align: center;
+        -webkit-transform: rotate(270deg);
+        /* -moz-transform: rotate(270deg); */
+        color: black !important;
+        font-size: 20px;
+        line-height: 40px;
+        text-decoration: none;
+        font-weight: 700;
+        }
+        #leftsidestuckbtnid1{
+        width: 175px;
+        height: 40px;
+        background: #ff9800 !important;
+        top: 28%;
+        position: fixed;
+        left: 0;
+        z-index: 1000;
+        margin-left: -70px;
+        border-top-left-radius: 11px;
+        border-top-right-radius: 11px;
+        text-align: center;
+        -webkit-transform: rotate(90deg);
+        /* -moz-transform: rotate(270deg); */
+        color: black !important;
+        font-size: 20px;
+        line-height: 40px;
+        text-decoration: none;
+        font-weight: 700;
+        }
+        #leftsidestuckbtnid2{
+        width: 175px;
+        height: 40px;
+        background: #ff9800 !important;
+        top: 66%;
+        position: fixed;
+        left: 0;
+        z-index: 1000;
+        margin-left: -70px;
+        border-top-left-radius: 11px;
+        border-top-right-radius: 11px;
+        text-align: center;
+        -webkit-transform: rotate(90deg);
+        /* -moz-transform: rotate(270deg); */
+        color: black !important;
+        font-size: 20px;
+        line-height: 40px;
+        text-decoration: none;
+        font-weight: 700;
+        }
+        #content {
+  position: absolute;
+  height: 50px;
+  width: 300px;
+  margin-left: 170px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#content.on {
+  -webkit-animation-name: in-out;
+  animation-name: in-out;
+  -webkit-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+.input {
+  box-sizing: border-box;
+  width: 35px;
+  height: 35px;
+  margin-left: 652px;
+  margin-top: 19px;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  background: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Roboto;
+  outline: 0;
+  -webkit-transition: width 0.4s ease-in-out, border-radius 0.8s ease-in-out,
+    padding 0.2s;
+  transition: width 0.4s ease-in-out, border-radius 0.8s ease-in-out,
+    padding 0.2s;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+  -webkit-transform: translate(-100%, -50%);
+  -ms-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+}
+.search {
+  background: none;
+  position: absolute;
+  top: 13px;
+  left: 655px;
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  border-radius: 100%;
+  outline: 0;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  -webkit-transform: translate(-100%, -50%);
+  -ms-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+}
+
+.search:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 4px;
+  background-color: #fff;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-top: 26px;
+  margin-left: 17px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.close {
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+  margin-top: 5px;
+}
+
+.close:before {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 4px;
+  margin-top: -1px;
+  margin-left: -13px;
+  background-color: #fff;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.close:after {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 4px;
+  background-color: #fff;
+  margin-top: -1px;
+  margin-left: -13px;
+  cursor: pointer;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.square {
+  box-sizing: border-box;
+  padding: 0 40px 0 10px;
+  width: 300px;
+  height: 35px;
+  border: 4px solid #ffffff;
+  border-radius: 0;
+  background: none;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  outline: 0;
+  -webkit-transition: width 0.4s ease-in-out, border-radius 0.4s ease-in-out,
+    padding 0.2s;
+  transition: width 0.4s ease-in-out, border-radius 0.4s ease-in-out,
+    padding 0.2s;
+  -webkit-transition-delay: 0.4s, 0s, 0.4s;
+  transition-delay: 0.4s, 0s, 0.4s;
+  -webkit-transform: translate(-100%, -50%);
+  -ms-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+}
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="navid">
+            <ul>
+                <li id="collegelogo"> <a id="collegelogoid" href="homepage.html">college</a></li>
+            
+                <li class="navbtnsclass" id="navbtnshome"><a href="homepage.html">home</a></li>
+                <li class="navbtnsclass" id="navbtnsmyclass"><a href="myclass.html">myClass</a></li>
+                <li class="navbtnsclass" id="navbtnsmyfriends"><a href="myfriends.html">myfriends</a></li>
+                <li class="navbtnsclass" id="navbtnsblogs"><a href="blogs.html">blogs</a></li>
+                <form id="content">
+                    <input type="text" name="input" class="input" id="search-input">
+                    <button type="reset" class="search" id="search-btn"></button>
+                  </form>
+            </ul>
+        </nav>
+    </header>
+    <a href="#" target="blank"> <div id="rightsidestuckbtnid1">Club 1</div></a>
+    <a href="#" target="blank"> <div id="rightsidestuckbtnid2">Club 2</div></a>
+    <a href="#" target="blank"> <div id="leftsidestuckbtnid1">Left side stuck</div></a>
+    <a href="#" target="blank"> <div id="leftsidestuckbtnid2">Left side stuck</div></a>
+    
+</body>
+<script>
+    const input = document.getElementById("search-input");
+const searchBtn = document.getElementById("search-btn");
+
+const expand = () => {
+  searchBtn.classList.toggle("close");
+  input.classList.toggle("square");
+};
+searchBtn.addEventListener("click", expand);
+</script>
+</html>
